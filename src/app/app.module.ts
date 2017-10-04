@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import {ButtonModule, PanelMenuModule} from 'primeng/primeng';
+import {ButtonModule, PanelMenuModule, MenubarModule} from 'primeng/primeng';
 
 import { AppComponent } from './app.component';
 import { ButtonDemoComponent } from './probe/button-demo/button-demo.component';
@@ -20,7 +20,8 @@ import { MainMenuComponent } from './components/main-menu/main-menu.component';
     FormsModule,
     HttpModule,
     ButtonModule,
-    PanelMenuModule
+    PanelMenuModule,
+    MenubarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

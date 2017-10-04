@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 
-import {PanelMenuModule, MenuItem} from 'primeng/primeng';
+import {MenubarModule, PanelMenuModule, MenuItem} from 'primeng/primeng';
 
 @Component({
   selector: 'app-main-menu',
@@ -9,11 +9,8 @@ import {PanelMenuModule, MenuItem} from 'primeng/primeng';
 })
 export class MainMenuComponent implements OnInit {
   items: MenuItem[];
-
   constructor() {
-  }
-
-  ngOnInit() {
+    // this.items = [{label: 'Пункт1'}, {label: 'Пункт2'}];
     this.items = [ // все меню
       {// Клиентам
         label: 'Клиентам',
@@ -45,6 +42,8 @@ export class MainMenuComponent implements OnInit {
         ]
       }
     ];
+  }
+  ngOnInit() {
   }
 }
 
