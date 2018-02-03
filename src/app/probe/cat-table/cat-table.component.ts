@@ -15,7 +15,7 @@ export class CatTableComponent implements OnInit {
   ngOnInit() {
     for (let i = 0 ; i < 30; i++ ) {
       this.cats.push(new Cat());
-      this.cats[i].id = i  ;
+      this.cats[i].id = i +1 ;
       this.cats[i].name = 'name' + i ;
       this.cats[i].weight = 3 + 0.1 * i ;
       this.cats[i].bday = new  Date(2016, 0, i + 1 );
@@ -26,7 +26,8 @@ export class CatTableComponent implements OnInit {
       { field: 'id', header: 'id' },
       { field: 'name', header: 'name' },
       { field: 'weight', header: 'weight' },
-      { field: 'bday', header: 'bday' }
+      { field: 'bday', header: 'bday' },
+      { field: 'isCastrate', header: 'isCastrate' }
     ];
   }
 
