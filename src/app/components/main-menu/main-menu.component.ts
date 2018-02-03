@@ -22,8 +22,8 @@ export class MainMenuComponent implements OnInit {
             {label: 'подпункт1-1'},
           ]
         },
-          {label: 'Пункт2'},
-          {label: 'Пункт3'}
+          {label: 'Пункт2', icon: 'fa-download', routerLink: ['/cats']},
+          {label: 'Пункт3', icon: 'fa-download', routerLink: ['/']}
         ]
       }, // клиентам
       {
