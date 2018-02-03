@@ -4,7 +4,8 @@ import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {RouterModule, Routes} from '@angular/router';
 // Берем все из PrimeNG
-import {ButtonModule, PanelMenuModule, MenubarModule} from 'primeng/primeng';
+import {ButtonModule, PanelMenuModule, MenubarModule } from 'primeng/primeng';
+import {TableModule} from 'primeng/table';
 
 // Наши сервисы
 import { CityDtoService } from './probe/city-dto.service';
@@ -32,7 +33,8 @@ import {appRoutes} from './AppRoutingTable';
     HttpClientModule,
     ButtonModule,
     PanelMenuModule,
-    MenubarModule
+    MenubarModule,
+    TableModule
   ],
   providers: [CityDtoService, HttpClientService],
   bootstrap: [AppComponent]

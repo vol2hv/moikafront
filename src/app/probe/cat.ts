@@ -4,4 +4,6 @@ export class Cat {
   weight?: number;
   bday?: Date;
   isCastrate?: boolean;
+
+  constructor() {}
 }
