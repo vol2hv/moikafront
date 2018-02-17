@@ -23,6 +23,7 @@ export class MainMenuComponent implements OnInit {
           ]
         },
           {label: 'Коты', icon: 'fa-download', routerLink: ['/cats'], title: 'Динамическая таблица котов'},
+          {label: 'Коты через Rest', icon: 'fa-download', routerLink: ['/cats_rest'], title: 'Коты через Rest'},
           {label: 'Домашняя ', icon: 'fa-download', routerLink: ['/']}
         ]
       }, // клиентам

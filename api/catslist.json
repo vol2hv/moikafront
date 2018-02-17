@@ -1,0 +1,436 @@
+{
+  "_embedded" : {
+    "cats" : [ {
+      "id" : 139,
+      "name" : "Cat29",
+      "weight" : 5.9,
+      "bday" : "2018-01-30",
+      "castrate" : true,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/cats/139"
+        },
+        "cat" : {
+          "href" : "http://localhost:8080/api/cats/139"
+        }
+      }
+    }, {
+      "id" : 110,
+      "name" : "Cat0",
+      "weight" : 3.0,
+      "bday" : "2018-01-01",
+      "castrate" : false,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/cats/110"
+        },
+        "cat" : {
+          "href" : "http://localhost:8080/api/cats/110"
+        }
+      }
+    }, {
+      "id" : 111,
+      "name" : "Cat1",
+      "weight" : 3.1,
+      "bday" : "2018-01-02",
+      "castrate" : false,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/cats/111"
+        },
+        "cat" : {
+          "href" : "http://localhost:8080/api/cats/111"
+        }
+      }
+    }, {
+      "id" : 112,
+      "name" : "Cat2",
+      "weight" : 3.2,
+      "bday" : "2018-01-03",
+      "castrate" : false,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/cats/112"
+        },
+        "cat" : {
+          "href" : "http://localhost:8080/api/cats/112"
+        }
+      }
+    }, {
+      "id" : 113,
+      "name" : "Cat3",
+      "weight" : 3.3,
+      "bday" : "2018-01-04",
+      "castrate" : false,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/cats/113"
+        },
+        "cat" : {
+          "href" : "http://localhost:8080/api/cats/113"
+        }
+      }
+    }, {
+      "id" : 114,
+      "name" : "Cat4",
+      "weight" : 3.4,
+      "bday" : "2018-01-05",
+      "castrate" : false,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/cats/114"
+        },
+        "cat" : {
+          "href" : "http://localhost:8080/api/cats/114"
+        }
+      }
+    }, {
+      "id" : 115,
+      "name" : "Cat5",
+      "weight" : 3.5,
+      "bday" : "2018-01-06",
+      "castrate" : false,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/cats/115"
+        },
+        "cat" : {
+          "href" : "http://localhost:8080/api/cats/115"
+        }
+      }
+    }, {
+      "id" : 116,
+      "name" : "Cat6",
+      "weight" : 3.6,
+      "bday" : "2018-01-07",
+      "castrate" : false,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/cats/116"
+        },
+        "cat" : {
+          "href" : "http://localhost:8080/api/cats/116"
+        }
+      }
+    }, {
+      "id" : 117,
+      "name" : "Cat7",
+      "weight" : 3.7,
+      "bday" : "2018-01-08",
+      "castrate" : false,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/cats/117"
+        },
+        "cat" : {
+          "href" : "http://localhost:8080/api/cats/117"
+        }
+      }
+    }, {
+      "id" : 118,
+      "name" : "Cat8",
+      "weight" : 3.8,
+      "bday" : "2018-01-09",
+      "castrate" : false,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/cats/118"
+        },
+        "cat" : {
+          "href" : "http://localhost:8080/api/cats/118"
+        }
+      }
+    }, {
+      "id" : 119,
+      "name" : "Cat9",
+      "weight" : 3.9,
+      "bday" : "2018-01-10",
+      "castrate" : false,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/cats/119"
+        },
+        "cat" : {
+          "href" : "http://localhost:8080/api/cats/119"
+        }
+      }
+    }, {
+      "id" : 120,
+      "name" : "Cat10",
+      "weight" : 4.0,
+      "bday" : "2018-01-11",
+      "castrate" : false,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/cats/120"
+        },
+        "cat" : {
+          "href" : "http://localhost:8080/api/cats/120"
+        }
+      }
+    }, {
+      "id" : 121,
+      "name" : "Cat11",
+      "weight" : 4.1,
+      "bday" : "2018-01-12",
+      "castrate" : false,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/cats/121"
+        },
+        "cat" : {
+          "href" : "http://localhost:8080/api/cats/121"
+        }
+      }
+    }, {
+      "id" : 122,
+      "name" : "Cat12",
+      "weight" : 4.2,
+      "bday" : "2018-01-13",
+      "castrate" : false,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/cats/122"
+        },
+        "cat" : {
+          "href" : "http://localhost:8080/api/cats/122"
+        }
+      }
+    }, {
+      "id" : 123,
+      "name" : "Cat13",
+      "weight" : 4.3,
+      "bday" : "2018-01-14",
+      "castrate" : false,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/cats/123"
+        },
+        "cat" : {
+          "href" : "http://localhost:8080/api/cats/123"
+        }
+      }
+    }, {
+      "id" : 124,
+      "name" : "Cat14",
+      "weight" : 4.4,
+      "bday" : "2018-01-15",
+      "castrate" : false,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/cats/124"
+        },
+        "cat" : {
+          "href" : "http://localhost:8080/api/cats/124"
+        }
+      }
+    }, {
+      "id" : 125,
+      "name" : "Cat15",
+      "weight" : 4.5,
+      "bday" : "2018-01-16",
+      "castrate" : false,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/cats/125"
+        },
+        "cat" : {
+          "href" : "http://localhost:8080/api/cats/125"
+        }
+      }
+    }, {
+      "id" : 126,
+      "name" : "Cat16",
+      "weight" : 4.6,
+      "bday" : "2018-01-17",
+      "castrate" : false,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/cats/126"
+        },
+        "cat" : {
+          "href" : "http://localhost:8080/api/cats/126"
+        }
+      }
+    }, {
+      "id" : 127,
+      "name" : "Cat17",
+      "weight" : 4.7,
+      "bday" : "2018-01-18",
+      "castrate" : false,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/cats/127"
+        },
+        "cat" : {
+          "href" : "http://localhost:8080/api/cats/127"
+        }
+      }
+    }, {
+      "id" : 128,
+      "name" : "Cat18",
+      "weight" : 4.8,
+      "bday" : "2018-01-19",
+      "castrate" : false,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/cats/128"
+        },
+        "cat" : {
+          "href" : "http://localhost:8080/api/cats/128"
+        }
+      }
+    }, {
+      "id" : 129,
+      "name" : "Cat19",
+      "weight" : 4.9,
+      "bday" : "2018-01-20",
+      "castrate" : false,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/cats/129"
+        },
+        "cat" : {
+          "href" : "http://localhost:8080/api/cats/129"
+        }
+      }
+    }, {
+      "id" : 130,
+      "name" : "Cat20",
+      "weight" : 5.0,
+      "bday" : "2018-01-21",
+      "castrate" : false,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/cats/130"
+        },
+        "cat" : {
+          "href" : "http://localhost:8080/api/cats/130"
+        }
+      }
+    }, {
+      "id" : 131,
+      "name" : "Cat21",
+      "weight" : 5.1,
+      "bday" : "2018-01-22",
+      "castrate" : false,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/cats/131"
+        },
+        "cat" : {
+          "href" : "http://localhost:8080/api/cats/131"
+        }
+      }
+    }, {
+      "id" : 132,
+      "name" : "Cat22",
+      "weight" : 5.2,
+      "bday" : "2018-01-23",
+      "castrate" : false,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/cats/132"
+        },
+        "cat" : {
+          "href" : "http://localhost:8080/api/cats/132"
+        }
+      }
+    }, {
+      "id" : 133,
+      "name" : "Cat23",
+      "weight" : 5.300000000000001,
+      "bday" : "2018-01-24",
+      "castrate" : false,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/cats/133"
+        },
+        "cat" : {
+          "href" : "http://localhost:8080/api/cats/133"
+        }
+      }
+    }, {
+      "id" : 134,
+      "name" : "Cat24",
+      "weight" : 5.4,
+      "bday" : "2018-01-25",
+      "castrate" : false,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/cats/134"
+        },
+        "cat" : {
+          "href" : "http://localhost:8080/api/cats/134"
+        }
+      }
+    }, {
+      "id" : 135,
+      "name" : "Cat25",
+      "weight" : 5.5,
+      "bday" : "2018-01-26",
+      "castrate" : false,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/cats/135"
+        },
+        "cat" : {
+          "href" : "http://localhost:8080/api/cats/135"
+        }
+      }
+    }, {
+      "id" : 136,
+      "name" : "Cat26",
+      "weight" : 5.6,
+      "bday" : "2018-01-27",
+      "castrate" : false,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/cats/136"
+        },
+        "cat" : {
+          "href" : "http://localhost:8080/api/cats/136"
+        }
+      }
+    }, {
+      "id" : 137,
+      "name" : "Cat27",
+      "weight" : 5.7,
+      "bday" : "2018-01-28",
+      "castrate" : false,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/cats/137"
+        },
+        "cat" : {
+          "href" : "http://localhost:8080/api/cats/137"
+        }
+      }
+    }, {
+      "id" : 138,
+      "name" : "Cat28",
+      "weight" : 5.800000000000001,
+      "bday" : "2018-01-29",
+      "castrate" : false,
+      "_links" : {
+        "self" : {
+          "href" : "http://localhost:8080/api/cats/138"
+        },
+        "cat" : {
+          "href" : "http://localhost:8080/api/cats/138"
+        }
+      }
+    } ]
+  },
+  "_links" : {
+    "self" : {
+      "href" : "http://localhost:8080/api/cats"
+    },
+    "profile" : {
+      "href" : "http://localhost:8080/api/profile/cats"
+    },
+    "search" : {
+      "href" : "http://localhost:8080/api/cats/search"
+    }
+  }
+}

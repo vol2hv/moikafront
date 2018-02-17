@@ -11,21 +11,9 @@ import {HttpClientService} from '../http-client.service';
 export class ButtonDemoComponent {
   clicks = 0;
 
-  constructor(private citydto: CityDtoService, private client: HttpClientService) { }
+  constructor () { }
 
   count() {
     this.clicks++;
-  }
-  list_city() {
-    this.count();
-    console.log(this.citydto.getAll());
-  }
-  sample1() {
-    this.count();
-    this.client.sample1();
-  }
-  restsample() {
-    this.count();
-    this.client.rest();
   }
 }
