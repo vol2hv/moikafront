@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs/Observable';
-import {CatListDto} from './cats_dto';
 
 @Injectable()
-export class HttpClientService {
+export class CatService {
   constructor(private httpClient: HttpClient) { }
-  getAll(url: string): Observable<CatListDto> {
-    return this.httpClient.get<CatListDto> (url);
+
+  get(url: string): Observable<any> {
+    return this.httpClient.get(url);
   }
 }
