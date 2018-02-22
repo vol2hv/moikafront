@@ -1,3 +1,9 @@
+/*
+вывод таблицы котов
+этот компонент нужен только изучения вывода таблицы
+нужда в нем отпадет когда будет отработан CRUD для таблиц
+*/
+
 import { Component, OnInit } from '@angular/core';
 import {Cat} from '../cat';
 import {CatService} from '../cat.service';

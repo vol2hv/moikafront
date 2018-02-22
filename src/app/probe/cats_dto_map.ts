@@ -1,5 +1,5 @@
-export interface CatListDto {
-  _embedded: CatListDtoWithoutLinks ;
+export interface CatListDtoMap {
+  _embedded: CatDto[] ;
   _links: Links;
 }
 export interface CatListDtoWithoutLinks {
