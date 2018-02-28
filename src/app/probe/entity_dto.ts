@@ -1,10 +1,13 @@
-export interface EntityDto<Entity> {
-  entity: Entity;
-  self: Link;
+export interface Cat extends LinksInner {
+  id: number;
+  name: string;
+  weight?: number;
+  bday?: Date;
+  isCastrate?: boolean;
 }
 
-export interface IistEntityDto<Entity> {
-  listEntity: EntityDto<Entity>[] ;
+export interface ArrayEntityDto<Entity> {
+  entities: Array<Entity>;
   _links: Links;
 }
 
@@ -13,8 +16,11 @@ export interface Links {
   profile: Link;
   search: Link;
 }
+export interface LinksInner {
+  _links: [string, Link];
+}
 
 export interface Link {
     href: string;
-    templated: boolean;
+    templated?: boolean;
  }

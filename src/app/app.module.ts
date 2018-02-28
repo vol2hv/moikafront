@@ -18,7 +18,7 @@ import { CatTableComponent } from './probe/cat-table/cat-table.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import {appRoutes} from './AppRoutingTable';
 import {CatTableRestComponent} from './probe/cat-table-rest/cat-table-rest.component';
-import {CatService} from './probe/cat.service';
+import {TsExampleComponent} from './probe/ts-example/ts-example.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +27,7 @@ import {CatService} from './probe/cat.service';
     MainMenuComponent,
     CatTableComponent,
     CatTableRestComponent,
+    TsExampleComponent,
     NotFoundComponent
   ],
   imports: [
@@ -39,7 +40,7 @@ import {CatService} from './probe/cat.service';
     MenubarModule,
     TableModule
   ],
-  providers: [CityDtoService, HttpClientService, CatService ],
+  providers: [CityDtoService, HttpClientService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
