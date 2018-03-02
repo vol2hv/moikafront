@@ -5,7 +5,9 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpClientService} from '../http-client.service';
 import {Cat} from '../entity_dto';
-
+import {forEach} from '@angular/router/src/utils/collection';
+import {Observable} from 'rxjs/Observable';
+import {HttpResponse} from '@angular/common/http';
 
 @Component({
   selector: 'app-cat-table-rest',
@@ -14,7 +16,7 @@ import {Cat} from '../entity_dto';
 })
 
 export class CatTableRestComponent implements OnInit {
-
+  cat: Cat;
   constructor(private httpClientService: HttpClientService) {
   }
 
@@ -27,11 +29,22 @@ export class CatTableRestComponent implements OnInit {
         // console.log(data._links.self);   ошибка
         console.log(data._links['self'].href);
         console.log(data._links['self']['href']);
+        this.cat = data;
+        console.log('qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq');
+        console.log(this.cat);
       });
     this.httpClientService.getAll<Cat>('http://moika:8080/api/cats/')
       .subscribe(data => {
         console.log(data);
-      })
+      });
+    this.httpClientService.getFullResponse<Cat>('http://moika:8080/api/cats/123')
+      .subscribe(data => {
+        console.log(data);
+        console.log(data.body);
+      });
+    // console.log('qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq');
+    // console.log(this.cat);
+    // Object.keys(this.cat).forEach(key => console.log(key, this[key], typeof (this[key])));
     // this.httpClientService.getAll('http://moika:8080/api/cats')
     //   .subscribe(data => {console.log(data);
     //   console.log( data._embedded.cats[13]._links.self);

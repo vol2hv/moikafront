@@ -1,4 +1,4 @@
-export interface Cat extends LinksInner {
+export interface Cat  extends LinksInner {
   id: number;
   name: string;
   weight?: number;
