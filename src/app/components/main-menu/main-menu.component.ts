@@ -37,7 +37,7 @@ export class MainMenuComponent implements OnInit {
       {
         label: 'Разработка',
         items: [
-          {label: 'Примры TypeScript',  routerLink: ['/ts_example']},
+          {label: 'Примеры TypeScript',  routerLink: ['/ts_example']},
           // {label: 'Страница Мадорина',routerLink: ['/dev-madv']},
           {label: 'Страница Скворцова'}
         ]

@@ -11,7 +11,7 @@ export const appRoutes: Routes = [
   { path: 'cats', component: CatTableComponent},
   { path: 'cats_rest', component: CatTableRestComponent},
   { path: 'ts_example', component: TsExampleComponent},
-  {path: 'qq', redirectTo: '', pathMatch: 'full'},
+  { path: 'qq', redirectTo: '', pathMatch: 'full'},
   { path: '**', component: NotFoundComponent }
 ];
 export class AppRoutingTable {}
