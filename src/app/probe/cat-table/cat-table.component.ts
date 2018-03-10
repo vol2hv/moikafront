@@ -5,7 +5,6 @@
 */
 
 import { Component, OnInit } from '@angular/core';
-import {CatService} from '../cat.service';
 import {Cat} from '../cats_dto';
 
 @Component({
@@ -16,13 +15,9 @@ import {Cat} from '../cats_dto';
 export class CatTableComponent implements OnInit {
   cats: Cat[] = Array(0);
   cols: any[];
-  constructor( private cs: CatService) {}
-
+  constructor() {}
 
   ngOnInit() {
-    this.cs.get('/api/catslist.json')
-      .subscribe(data => {console.log(data); }
-  )
     for (let i = 0 ; i < 30; i++ ) {
       this.cats.push(new Cat());
       this.cats[i].id = i + 1 ;
