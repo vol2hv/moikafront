@@ -8,7 +8,6 @@ import {ButtonModule, PanelMenuModule, MenubarModule } from 'primeng/primeng';
 import {TableModule} from 'primeng/table';
 
 // Наши сервисы
-import { CityDtoService } from './probe/city-dto.service';
 import {HttpClientService} from './probe/http-client.service';
 // Наши компоненты
 import { AppComponent } from './app.component';
@@ -40,7 +39,7 @@ import {TsExampleComponent} from './probe/ts-example/ts-example.component';
     MenubarModule,
     TableModule
   ],
-  providers: [CityDtoService, HttpClientService],
+  providers: [HttpClientService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

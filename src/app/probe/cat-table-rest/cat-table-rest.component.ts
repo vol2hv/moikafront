@@ -7,7 +7,8 @@ import {HttpClientService} from '../http-client.service';
 import {forEach} from '@angular/router/src/utils/collection';
 import {Observable} from 'rxjs/Observable';
 import {HttpResponse} from '@angular/common/http';
-import {Cat, CatDto} from '../cats_dto';
+import {Cat, ICat} from '../cats_dto';
+import {ArrayEntityDto} from '../entity_dto';
 
 @Component({
   selector: 'app-cat-table-rest',
@@ -21,37 +22,19 @@ export class CatTableRestComponent implements OnInit {
   }
 
   ngOnInit() {
-/*    this.httpClientService.get<Cat>('http://moika:8080/api/cats/121')
-      .subscribe(data => {
-        console.log(data);
-        console.log(typeof(data.bday));
-        console.log(data._links['self']);
-        // console.log(data._links.self);   ошибка
-        console.log(data._links['self'].href);
-        console.log(data._links['self']['href']);
-        this.cat = data;
-        console.log('qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq');
-        console.log(this.cat);
-      });
-    this.httpClientService.getAll<Cat>('http://moika:8080/api/cats/')
-      .subscribe(data => {
-        console.log(data);
-      });
-    this.httpClientService.getFullResponse<Cat>('http://moika:8080/api/cats/123')
-      .subscribe(data => {
-        console.log(data);
-        console.log(data.body);
-      });
-*/
-    this.httpClientService.get1<CatDto>('http://moika:8080/api/cats/121')
+    this.httpClientService.get<ICat>('http://moika:8080/api/cats/121')
       .subscribe(data => {
         console.log(data);
         console.log('Тип полученных данных:!! ' , typeof (data));
         console.log(typeof(data.bday));
-        console.log(data._links['self']);
-        // console.log(data._links.self);   ошибка
         console.log(data._links['self'].href);
-        console.log(data._links['self']['href']);
+      });
+    this.httpClientService.getAll<ICat>('http://moika:8080/api/cats')
+      .subscribe(data => {
+        console.log(data);
+        console.log('Тип полученных данных:!! ' , typeof (data));
+        console.log(data._embedded['cats'][12].bday);
+        console.log(data._embedded['cats'][12]._links['self'].href);
       });
     // Object.keys(this.cat).forEach(key => console.log(key, this[key], typeof (this[key])));
   }

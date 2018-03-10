@@ -1,6 +1,6 @@
 
 export interface ArrayEntityDto<Entity> {
-  entities: Array<Entity>;
+  _embedded: [string, Array<Entity>];
   _links: Links;
 }
 

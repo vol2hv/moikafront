@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { CityDtoService } from '../../probe/city-dto.service';
 import {HttpClientService} from '../http-client.service';
 
 
