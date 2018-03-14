@@ -1,1 +1,19 @@
 <h1>Коты через Rest QQQ</h1>
+<button pButton type="button" (click)="download()" icon="fa-check" label="download"></button>
+<button pButton type="button" (click)="clear()" icon="fa-check" label="clear"></button>
+<p-table [columns]="cols" [value]="cats" [paginator]="true" [rows]="10">
+  <ng-template pTemplate="header" let-columns>
+    <tr>
+      <th *ngFor="let col of columns">
+        {{col.header}}
+      </th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-rowData let-columns="columns">
+    <tr>
+      <td *ngFor="let col of columns">
+        {{rowData[col.field]}}
+      </td>
+    </tr>
+  </ng-template>
+</p-table>

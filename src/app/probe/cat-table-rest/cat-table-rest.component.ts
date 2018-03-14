@@ -18,24 +18,41 @@ import {ArrayEntityDto} from '../entity_dto';
 
 export class CatTableRestComponent implements OnInit {
   cat: Cat;
+  cats: Cat[];
+  cols: any[];
   constructor(private httpClientService: HttpClientService) {
   }
-
+  download() {
+    this.httpClientService.getAll<Cat>('http://moika:8080/api/cats')
+      .subscribe(data => {
+        console.log(data);
+        this.cats = data;
+        this.cat = data[16];
+        for (const item in this.cat) {
+          const key = this.cat[item];
+          console.log(item, key, typeof (key));
+        }
+      });
+  }
+  clear() {
+    this.cats = [];
+  }
   ngOnInit() {
-    this.httpClientService.get<ICat>('http://moika:8080/api/cats/121')
+   /* this.httpClientService.get<Cat>('http://moika:8080/api/cats/121')
       .subscribe(data => {
         console.log(data);
         console.log('Тип полученных данных:!! ' , typeof (data));
         console.log(typeof(data.bday));
         console.log(data._links['self'].href);
+        this.cat = data;
       });
-    this.httpClientService.getAll<ICat>('http://moika:8080/api/cats')
-      .subscribe(data => {
-        console.log(data);
-        console.log('Тип полученных данных:!! ' , typeof (data));
-        console.log(data._embedded['cats'][12].bday);
-        console.log(data._embedded['cats'][12]._links['self'].href);
-      });
-    // Object.keys(this.cat).forEach(key => console.log(key, this[key], typeof (this[key])));
+      */
+    this.cols = [
+      { field: 'id', header: 'id' },
+      { field: 'name', header: 'name' },
+      { field: 'weight', header: 'weight' },
+      { field: 'bday', header: 'bday' },
+      { field: 'isCastrate', header: 'isCastrate' }
+    ];
   }
 }

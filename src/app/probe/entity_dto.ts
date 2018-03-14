@@ -1,19 +1,19 @@
 
-export interface ArrayEntityDto<Entity> {
+export class ArrayEntityDto<Entity> {
   _embedded: [string, Array<Entity>];
   _links: Links;
 }
 
-export interface Links {
+export class Links {
   self: Link;
   profile: Link;
   search: Link;
 }
-export interface LinksInner {
+export class LinksInner {
   _links: [string, Link];
 }
 
-export interface Link {
+export class Link {
     href: string;
     templated?: boolean;
  }
